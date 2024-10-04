@@ -5,5 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salon kosmetyczny</title>
     <link rel="stylesheet" href="styl7.css" />
+    <script>
+      function handleClick() {
+        let peeling = document.getElementById("peeling").checked ? 45 : 0;
+        let maska = document.getElementById("maska").checked ? 30 : 0;
+        let masaz = document.getElementById("masaz").checked ? 20 : 0;
+        let makijaz = document.getElementById("makijaz").checked ? 50 : 0;
 
+        let suma = peeling + maska + masaz + makijaz;
+
+        let status = document.getElementById("status");
+        status.textContent = `Cena zabiegów: ${suma}`;
+      }
 
