@@ -24,4 +24,27 @@
       <aside class="left">
           <a href="index.html" class="a-index">Strona główna</a>
         </nav>
+        <main>
+          <h3>Kalkulator cen wizyty</h3>
+          <div>
+            <input type="checkbox" id="peeling" />
+            <label for="peeling">Peeling</label>
+          </div>
+          <div>
+            <input type="checkbox" id="maska" />
+            <label for="maska">Maska</label>
+          </div>
+          <div>
+            <input type="checkbox" id="masaz" />
+            <label for="masaz">Masaż twarzy</label>
+          </div>
+          <div>
+            <input type="checkbox" id="makijaz" />
+            <label for="makijaz">Makijaż</label>
+          </div>
+          <div>
+            <button type="button" onclick="handleClick()">Oblicz cenę</button>
+          </div>
+          <p id="status"></p>
+        </main>
 
